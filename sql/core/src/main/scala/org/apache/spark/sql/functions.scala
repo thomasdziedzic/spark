@@ -3296,6 +3296,150 @@ object functions {
     UserDefinedFunction(f, ScalaReflection.schemaFor(typeTag[RT]).dataType, inputTypes)
   }
 
+  /**
+   * Defines a user-defined function of 11 arguments as user-defined function (UDF).
+   * The data types are automatically inferred based on the function's signature.
+   *
+   * @group udf_funcs
+   * @since 1.3.0
+   */
+  def udf[RT: TypeTag, A1: TypeTag, A2: TypeTag, A3: TypeTag, A4: TypeTag, A5: TypeTag, A6: TypeTag, A7: TypeTag, A8: TypeTag, A9: TypeTag, A10: TypeTag, A11: TypeTag](f: Function11[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, RT]): UserDefinedFunction = {
+    val inputTypes = Try(ScalaReflection.schemaFor(typeTag[A1]).dataType :: ScalaReflection.schemaFor(typeTag[A2]).dataType :: ScalaReflection.schemaFor(typeTag[A3]).dataType :: ScalaReflection.schemaFor(typeTag[A4]).dataType :: ScalaReflection.schemaFor(typeTag[A5]).dataType :: ScalaReflection.schemaFor(typeTag[A6]).dataType :: ScalaReflection.schemaFor(typeTag[A7]).dataType :: ScalaReflection.schemaFor(typeTag[A8]).dataType :: ScalaReflection.schemaFor(typeTag[A9]).dataType :: ScalaReflection.schemaFor(typeTag[A10]).dataType :: ScalaReflection.schemaFor(typeTag[A11]).dataType :: Nil).toOption
+    UserDefinedFunction(f, ScalaReflection.schemaFor(typeTag[RT]).dataType, inputTypes)
+  }
+
+  /**
+   * Defines a user-defined function of 12 arguments as user-defined function (UDF).
+   * The data types are automatically inferred based on the function's signature.
+   *
+   * @group udf_funcs
+   * @since 1.3.0
+   */
+  def udf[RT: TypeTag, A1: TypeTag, A2: TypeTag, A3: TypeTag, A4: TypeTag, A5: TypeTag, A6: TypeTag, A7: TypeTag, A8: TypeTag, A9: TypeTag, A10: TypeTag, A11: TypeTag, A12: TypeTag](f: Function12[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, RT]): UserDefinedFunction = {
+    val inputTypes = Try(ScalaReflection.schemaFor(typeTag[A1]).dataType :: ScalaReflection.schemaFor(typeTag[A2]).dataType :: ScalaReflection.schemaFor(typeTag[A3]).dataType :: ScalaReflection.schemaFor(typeTag[A4]).dataType :: ScalaReflection.schemaFor(typeTag[A5]).dataType :: ScalaReflection.schemaFor(typeTag[A6]).dataType :: ScalaReflection.schemaFor(typeTag[A7]).dataType :: ScalaReflection.schemaFor(typeTag[A8]).dataType :: ScalaReflection.schemaFor(typeTag[A9]).dataType :: ScalaReflection.schemaFor(typeTag[A10]).dataType :: ScalaReflection.schemaFor(typeTag[A11]).dataType :: ScalaReflection.schemaFor(typeTag[A12]).dataType :: Nil).toOption
+    UserDefinedFunction(f, ScalaReflection.schemaFor(typeTag[RT]).dataType, inputTypes)
+  }
+
+  /**
+   * Defines a user-defined function of 13 arguments as user-defined function (UDF).
+   * The data types are automatically inferred based on the function's signature.
+   *
+   * @group udf_funcs
+   * @since 1.3.0
+   */
+  def udf[RT: TypeTag, A1: TypeTag, A2: TypeTag, A3: TypeTag, A4: TypeTag, A5: TypeTag, A6: TypeTag, A7: TypeTag, A8: TypeTag, A9: TypeTag, A10: TypeTag, A11: TypeTag, A12: TypeTag, A13: TypeTag](f: Function13[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, RT]): UserDefinedFunction = {
+    val inputTypes = Try(ScalaReflection.schemaFor(typeTag[A1]).dataType :: ScalaReflection.schemaFor(typeTag[A2]).dataType :: ScalaReflection.schemaFor(typeTag[A3]).dataType :: ScalaReflection.schemaFor(typeTag[A4]).dataType :: ScalaReflection.schemaFor(typeTag[A5]).dataType :: ScalaReflection.schemaFor(typeTag[A6]).dataType :: ScalaReflection.schemaFor(typeTag[A7]).dataType :: ScalaReflection.schemaFor(typeTag[A8]).dataType :: ScalaReflection.schemaFor(typeTag[A9]).dataType :: ScalaReflection.schemaFor(typeTag[A10]).dataType :: ScalaReflection.schemaFor(typeTag[A11]).dataType :: ScalaReflection.schemaFor(typeTag[A12]).dataType :: ScalaReflection.schemaFor(typeTag[A13]).dataType :: Nil).toOption
+    UserDefinedFunction(f, ScalaReflection.schemaFor(typeTag[RT]).dataType, inputTypes)
+  }
+
+  /**
+   * Defines a user-defined function of 14 arguments as user-defined function (UDF).
+   * The data types are automatically inferred based on the function's signature.
+   *
+   * @group udf_funcs
+   * @since 1.3.0
+   */
+  def udf[RT: TypeTag, A1: TypeTag, A2: TypeTag, A3: TypeTag, A4: TypeTag, A5: TypeTag, A6: TypeTag, A7: TypeTag, A8: TypeTag, A9: TypeTag, A10: TypeTag, A11: TypeTag, A12: TypeTag, A13: TypeTag, A14: TypeTag](f: Function14[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, RT]): UserDefinedFunction = {
+    val inputTypes = Try(ScalaReflection.schemaFor(typeTag[A1]).dataType :: ScalaReflection.schemaFor(typeTag[A2]).dataType :: ScalaReflection.schemaFor(typeTag[A3]).dataType :: ScalaReflection.schemaFor(typeTag[A4]).dataType :: ScalaReflection.schemaFor(typeTag[A5]).dataType :: ScalaReflection.schemaFor(typeTag[A6]).dataType :: ScalaReflection.schemaFor(typeTag[A7]).dataType :: ScalaReflection.schemaFor(typeTag[A8]).dataType :: ScalaReflection.schemaFor(typeTag[A9]).dataType :: ScalaReflection.schemaFor(typeTag[A10]).dataType :: ScalaReflection.schemaFor(typeTag[A11]).dataType :: ScalaReflection.schemaFor(typeTag[A12]).dataType :: ScalaReflection.schemaFor(typeTag[A13]).dataType :: ScalaReflection.schemaFor(typeTag[A14]).dataType :: Nil).toOption
+    UserDefinedFunction(f, ScalaReflection.schemaFor(typeTag[RT]).dataType, inputTypes)
+  }
+
+  /**
+   * Defines a user-defined function of 15 arguments as user-defined function (UDF).
+   * The data types are automatically inferred based on the function's signature.
+   *
+   * @group udf_funcs
+   * @since 1.3.0
+   */
+  def udf[RT: TypeTag, A1: TypeTag, A2: TypeTag, A3: TypeTag, A4: TypeTag, A5: TypeTag, A6: TypeTag, A7: TypeTag, A8: TypeTag, A9: TypeTag, A10: TypeTag, A11: TypeTag, A12: TypeTag, A13: TypeTag, A14: TypeTag, A15: TypeTag](f: Function15[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, A15, RT]): UserDefinedFunction = {
+    val inputTypes = Try(ScalaReflection.schemaFor(typeTag[A1]).dataType :: ScalaReflection.schemaFor(typeTag[A2]).dataType :: ScalaReflection.schemaFor(typeTag[A3]).dataType :: ScalaReflection.schemaFor(typeTag[A4]).dataType :: ScalaReflection.schemaFor(typeTag[A5]).dataType :: ScalaReflection.schemaFor(typeTag[A6]).dataType :: ScalaReflection.schemaFor(typeTag[A7]).dataType :: ScalaReflection.schemaFor(typeTag[A8]).dataType :: ScalaReflection.schemaFor(typeTag[A9]).dataType :: ScalaReflection.schemaFor(typeTag[A10]).dataType :: ScalaReflection.schemaFor(typeTag[A11]).dataType :: ScalaReflection.schemaFor(typeTag[A12]).dataType :: ScalaReflection.schemaFor(typeTag[A13]).dataType :: ScalaReflection.schemaFor(typeTag[A14]).dataType :: ScalaReflection.schemaFor(typeTag[A15]).dataType :: Nil).toOption
+    UserDefinedFunction(f, ScalaReflection.schemaFor(typeTag[RT]).dataType, inputTypes)
+  }
+
+  /**
+   * Defines a user-defined function of 16 arguments as user-defined function (UDF).
+   * The data types are automatically inferred based on the function's signature.
+   *
+   * @group udf_funcs
+   * @since 1.3.0
+   */
+  def udf[RT: TypeTag, A1: TypeTag, A2: TypeTag, A3: TypeTag, A4: TypeTag, A5: TypeTag, A6: TypeTag, A7: TypeTag, A8: TypeTag, A9: TypeTag, A10: TypeTag, A11: TypeTag, A12: TypeTag, A13: TypeTag, A14: TypeTag, A15: TypeTag, A16: TypeTag](f: Function16[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, A15, A16, RT]): UserDefinedFunction = {
+    val inputTypes = Try(ScalaReflection.schemaFor(typeTag[A1]).dataType :: ScalaReflection.schemaFor(typeTag[A2]).dataType :: ScalaReflection.schemaFor(typeTag[A3]).dataType :: ScalaReflection.schemaFor(typeTag[A4]).dataType :: ScalaReflection.schemaFor(typeTag[A5]).dataType :: ScalaReflection.schemaFor(typeTag[A6]).dataType :: ScalaReflection.schemaFor(typeTag[A7]).dataType :: ScalaReflection.schemaFor(typeTag[A8]).dataType :: ScalaReflection.schemaFor(typeTag[A9]).dataType :: ScalaReflection.schemaFor(typeTag[A10]).dataType :: ScalaReflection.schemaFor(typeTag[A11]).dataType :: ScalaReflection.schemaFor(typeTag[A12]).dataType :: ScalaReflection.schemaFor(typeTag[A13]).dataType :: ScalaReflection.schemaFor(typeTag[A14]).dataType :: ScalaReflection.schemaFor(typeTag[A15]).dataType :: ScalaReflection.schemaFor(typeTag[A16]).dataType :: Nil).toOption
+    UserDefinedFunction(f, ScalaReflection.schemaFor(typeTag[RT]).dataType, inputTypes)
+  }
+
+  /**
+   * Defines a user-defined function of 17 arguments as user-defined function (UDF).
+   * The data types are automatically inferred based on the function's signature.
+   *
+   * @group udf_funcs
+   * @since 1.3.0
+   */
+  def udf[RT: TypeTag, A1: TypeTag, A2: TypeTag, A3: TypeTag, A4: TypeTag, A5: TypeTag, A6: TypeTag, A7: TypeTag, A8: TypeTag, A9: TypeTag, A10: TypeTag, A11: TypeTag, A12: TypeTag, A13: TypeTag, A14: TypeTag, A15: TypeTag, A16: TypeTag, A17: TypeTag](f: Function17[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, A15, A16, A17, RT]): UserDefinedFunction = {
+    val inputTypes = Try(ScalaReflection.schemaFor(typeTag[A1]).dataType :: ScalaReflection.schemaFor(typeTag[A2]).dataType :: ScalaReflection.schemaFor(typeTag[A3]).dataType :: ScalaReflection.schemaFor(typeTag[A4]).dataType :: ScalaReflection.schemaFor(typeTag[A5]).dataType :: ScalaReflection.schemaFor(typeTag[A6]).dataType :: ScalaReflection.schemaFor(typeTag[A7]).dataType :: ScalaReflection.schemaFor(typeTag[A8]).dataType :: ScalaReflection.schemaFor(typeTag[A9]).dataType :: ScalaReflection.schemaFor(typeTag[A10]).dataType :: ScalaReflection.schemaFor(typeTag[A11]).dataType :: ScalaReflection.schemaFor(typeTag[A12]).dataType :: ScalaReflection.schemaFor(typeTag[A13]).dataType :: ScalaReflection.schemaFor(typeTag[A14]).dataType :: ScalaReflection.schemaFor(typeTag[A15]).dataType :: ScalaReflection.schemaFor(typeTag[A16]).dataType :: ScalaReflection.schemaFor(typeTag[A17]).dataType :: Nil).toOption
+    UserDefinedFunction(f, ScalaReflection.schemaFor(typeTag[RT]).dataType, inputTypes)
+  }
+
+  /**
+   * Defines a user-defined function of 18 arguments as user-defined function (UDF).
+   * The data types are automatically inferred based on the function's signature.
+   *
+   * @group udf_funcs
+   * @since 1.3.0
+   */
+  def udf[RT: TypeTag, A1: TypeTag, A2: TypeTag, A3: TypeTag, A4: TypeTag, A5: TypeTag, A6: TypeTag, A7: TypeTag, A8: TypeTag, A9: TypeTag, A10: TypeTag, A11: TypeTag, A12: TypeTag, A13: TypeTag, A14: TypeTag, A15: TypeTag, A16: TypeTag, A17: TypeTag, A18: TypeTag](f: Function18[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, A15, A16, A17, A18, RT]): UserDefinedFunction = {
+    val inputTypes = Try(ScalaReflection.schemaFor(typeTag[A1]).dataType :: ScalaReflection.schemaFor(typeTag[A2]).dataType :: ScalaReflection.schemaFor(typeTag[A3]).dataType :: ScalaReflection.schemaFor(typeTag[A4]).dataType :: ScalaReflection.schemaFor(typeTag[A5]).dataType :: ScalaReflection.schemaFor(typeTag[A6]).dataType :: ScalaReflection.schemaFor(typeTag[A7]).dataType :: ScalaReflection.schemaFor(typeTag[A8]).dataType :: ScalaReflection.schemaFor(typeTag[A9]).dataType :: ScalaReflection.schemaFor(typeTag[A10]).dataType :: ScalaReflection.schemaFor(typeTag[A11]).dataType :: ScalaReflection.schemaFor(typeTag[A12]).dataType :: ScalaReflection.schemaFor(typeTag[A13]).dataType :: ScalaReflection.schemaFor(typeTag[A14]).dataType :: ScalaReflection.schemaFor(typeTag[A15]).dataType :: ScalaReflection.schemaFor(typeTag[A16]).dataType :: ScalaReflection.schemaFor(typeTag[A17]).dataType :: ScalaReflection.schemaFor(typeTag[A18]).dataType :: Nil).toOption
+    UserDefinedFunction(f, ScalaReflection.schemaFor(typeTag[RT]).dataType, inputTypes)
+  }
+
+  /**
+   * Defines a user-defined function of 19 arguments as user-defined function (UDF).
+   * The data types are automatically inferred based on the function's signature.
+   *
+   * @group udf_funcs
+   * @since 1.3.0
+   */
+  def udf[RT: TypeTag, A1: TypeTag, A2: TypeTag, A3: TypeTag, A4: TypeTag, A5: TypeTag, A6: TypeTag, A7: TypeTag, A8: TypeTag, A9: TypeTag, A10: TypeTag, A11: TypeTag, A12: TypeTag, A13: TypeTag, A14: TypeTag, A15: TypeTag, A16: TypeTag, A17: TypeTag, A18: TypeTag, A19: TypeTag](f: Function19[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, A15, A16, A17, A18, A19, RT]): UserDefinedFunction = {
+    val inputTypes = Try(ScalaReflection.schemaFor(typeTag[A1]).dataType :: ScalaReflection.schemaFor(typeTag[A2]).dataType :: ScalaReflection.schemaFor(typeTag[A3]).dataType :: ScalaReflection.schemaFor(typeTag[A4]).dataType :: ScalaReflection.schemaFor(typeTag[A5]).dataType :: ScalaReflection.schemaFor(typeTag[A6]).dataType :: ScalaReflection.schemaFor(typeTag[A7]).dataType :: ScalaReflection.schemaFor(typeTag[A8]).dataType :: ScalaReflection.schemaFor(typeTag[A9]).dataType :: ScalaReflection.schemaFor(typeTag[A10]).dataType :: ScalaReflection.schemaFor(typeTag[A11]).dataType :: ScalaReflection.schemaFor(typeTag[A12]).dataType :: ScalaReflection.schemaFor(typeTag[A13]).dataType :: ScalaReflection.schemaFor(typeTag[A14]).dataType :: ScalaReflection.schemaFor(typeTag[A15]).dataType :: ScalaReflection.schemaFor(typeTag[A16]).dataType :: ScalaReflection.schemaFor(typeTag[A17]).dataType :: ScalaReflection.schemaFor(typeTag[A18]).dataType :: ScalaReflection.schemaFor(typeTag[A19]).dataType :: Nil).toOption
+    UserDefinedFunction(f, ScalaReflection.schemaFor(typeTag[RT]).dataType, inputTypes)
+  }
+
+  /**
+   * Defines a user-defined function of 20 arguments as user-defined function (UDF).
+   * The data types are automatically inferred based on the function's signature.
+   *
+   * @group udf_funcs
+   * @since 1.3.0
+   */
+  def udf[RT: TypeTag, A1: TypeTag, A2: TypeTag, A3: TypeTag, A4: TypeTag, A5: TypeTag, A6: TypeTag, A7: TypeTag, A8: TypeTag, A9: TypeTag, A10: TypeTag, A11: TypeTag, A12: TypeTag, A13: TypeTag, A14: TypeTag, A15: TypeTag, A16: TypeTag, A17: TypeTag, A18: TypeTag, A19: TypeTag, A20: TypeTag](f: Function20[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, A15, A16, A17, A18, A19, A20, RT]): UserDefinedFunction = {
+    val inputTypes = Try(ScalaReflection.schemaFor(typeTag[A1]).dataType :: ScalaReflection.schemaFor(typeTag[A2]).dataType :: ScalaReflection.schemaFor(typeTag[A3]).dataType :: ScalaReflection.schemaFor(typeTag[A4]).dataType :: ScalaReflection.schemaFor(typeTag[A5]).dataType :: ScalaReflection.schemaFor(typeTag[A6]).dataType :: ScalaReflection.schemaFor(typeTag[A7]).dataType :: ScalaReflection.schemaFor(typeTag[A8]).dataType :: ScalaReflection.schemaFor(typeTag[A9]).dataType :: ScalaReflection.schemaFor(typeTag[A10]).dataType :: ScalaReflection.schemaFor(typeTag[A11]).dataType :: ScalaReflection.schemaFor(typeTag[A12]).dataType :: ScalaReflection.schemaFor(typeTag[A13]).dataType :: ScalaReflection.schemaFor(typeTag[A14]).dataType :: ScalaReflection.schemaFor(typeTag[A15]).dataType :: ScalaReflection.schemaFor(typeTag[A16]).dataType :: ScalaReflection.schemaFor(typeTag[A17]).dataType :: ScalaReflection.schemaFor(typeTag[A18]).dataType :: ScalaReflection.schemaFor(typeTag[A19]).dataType :: ScalaReflection.schemaFor(typeTag[A20]).dataType :: Nil).toOption
+    UserDefinedFunction(f, ScalaReflection.schemaFor(typeTag[RT]).dataType, inputTypes)
+  }
+
+  /**
+   * Defines a user-defined function of 21 arguments as user-defined function (UDF).
+   * The data types are automatically inferred based on the function's signature.
+   *
+   * @group udf_funcs
+   * @since 1.3.0
+   */
+  def udf[RT: TypeTag, A1: TypeTag, A2: TypeTag, A3: TypeTag, A4: TypeTag, A5: TypeTag, A6: TypeTag, A7: TypeTag, A8: TypeTag, A9: TypeTag, A10: TypeTag, A11: TypeTag, A12: TypeTag, A13: TypeTag, A14: TypeTag, A15: TypeTag, A16: TypeTag, A17: TypeTag, A18: TypeTag, A19: TypeTag, A20: TypeTag, A21: TypeTag](f: Function21[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, A15, A16, A17, A18, A19, A20, A21, RT]): UserDefinedFunction = {
+    val inputTypes = Try(ScalaReflection.schemaFor(typeTag[A1]).dataType :: ScalaReflection.schemaFor(typeTag[A2]).dataType :: ScalaReflection.schemaFor(typeTag[A3]).dataType :: ScalaReflection.schemaFor(typeTag[A4]).dataType :: ScalaReflection.schemaFor(typeTag[A5]).dataType :: ScalaReflection.schemaFor(typeTag[A6]).dataType :: ScalaReflection.schemaFor(typeTag[A7]).dataType :: ScalaReflection.schemaFor(typeTag[A8]).dataType :: ScalaReflection.schemaFor(typeTag[A9]).dataType :: ScalaReflection.schemaFor(typeTag[A10]).dataType :: ScalaReflection.schemaFor(typeTag[A11]).dataType :: ScalaReflection.schemaFor(typeTag[A12]).dataType :: ScalaReflection.schemaFor(typeTag[A13]).dataType :: ScalaReflection.schemaFor(typeTag[A14]).dataType :: ScalaReflection.schemaFor(typeTag[A15]).dataType :: ScalaReflection.schemaFor(typeTag[A16]).dataType :: ScalaReflection.schemaFor(typeTag[A17]).dataType :: ScalaReflection.schemaFor(typeTag[A18]).dataType :: ScalaReflection.schemaFor(typeTag[A19]).dataType :: ScalaReflection.schemaFor(typeTag[A20]).dataType :: ScalaReflection.schemaFor(typeTag[A21]).dataType :: Nil).toOption
+    UserDefinedFunction(f, ScalaReflection.schemaFor(typeTag[RT]).dataType, inputTypes)
+  }
+
+  /**
+   * Defines a user-defined function of 22 arguments as user-defined function (UDF).
+   * The data types are automatically inferred based on the function's signature.
+   *
+   * @group udf_funcs
+   * @since 1.3.0
+   */
+  def udf[RT: TypeTag, A1: TypeTag, A2: TypeTag, A3: TypeTag, A4: TypeTag, A5: TypeTag, A6: TypeTag, A7: TypeTag, A8: TypeTag, A9: TypeTag, A10: TypeTag, A11: TypeTag, A12: TypeTag, A13: TypeTag, A14: TypeTag, A15: TypeTag, A16: TypeTag, A17: TypeTag, A18: TypeTag, A19: TypeTag, A20: TypeTag, A21: TypeTag, A22: TypeTag](f: Function22[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, A15, A16, A17, A18, A19, A20, A21, A22, RT]): UserDefinedFunction = {
+    val inputTypes = Try(ScalaReflection.schemaFor(typeTag[A1]).dataType :: ScalaReflection.schemaFor(typeTag[A2]).dataType :: ScalaReflection.schemaFor(typeTag[A3]).dataType :: ScalaReflection.schemaFor(typeTag[A4]).dataType :: ScalaReflection.schemaFor(typeTag[A5]).dataType :: ScalaReflection.schemaFor(typeTag[A6]).dataType :: ScalaReflection.schemaFor(typeTag[A7]).dataType :: ScalaReflection.schemaFor(typeTag[A8]).dataType :: ScalaReflection.schemaFor(typeTag[A9]).dataType :: ScalaReflection.schemaFor(typeTag[A10]).dataType :: ScalaReflection.schemaFor(typeTag[A11]).dataType :: ScalaReflection.schemaFor(typeTag[A12]).dataType :: ScalaReflection.schemaFor(typeTag[A13]).dataType :: ScalaReflection.schemaFor(typeTag[A14]).dataType :: ScalaReflection.schemaFor(typeTag[A15]).dataType :: ScalaReflection.schemaFor(typeTag[A16]).dataType :: ScalaReflection.schemaFor(typeTag[A17]).dataType :: ScalaReflection.schemaFor(typeTag[A18]).dataType :: ScalaReflection.schemaFor(typeTag[A19]).dataType :: ScalaReflection.schemaFor(typeTag[A20]).dataType :: ScalaReflection.schemaFor(typeTag[A21]).dataType :: ScalaReflection.schemaFor(typeTag[A22]).dataType :: Nil).toOption
+    UserDefinedFunction(f, ScalaReflection.schemaFor(typeTag[RT]).dataType, inputTypes)
+  }
+
   // scalastyle:on parameter.number
   // scalastyle:on line.size.limit
 
